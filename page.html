@@ -1,0 +1,255 @@
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Scrolling Website</title>
+  <link rel="stylesheet" href="hii.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/zls3avl.css">
+</head>
+<body>
+  <!--navigation bar-->
+    <nav>
+        <div style="padding-top:10px; padding-bottom:20px;">
+            <a href="#home" class="nav-link"><img src="hlow.png" alt="Home" title="Home" style="width:25px ; height:25px;"></a>
+        </div>
+        <div style="padding-bottom:20px;">
+            <a href="#projects" class="nav-link"><img src="image.png" alt="projects" title="projects" style="width:25px; height:25px;"></a>
+        </div>
+        <div style="padding-bottom:20px;">
+            <a href="#about" class="nav-link"><img src="about.png" alt="about me " title="about me" style="width:25px; height:25px;"></a>
+        </div>
+        <div style="padding-bottom:10px;">
+            <a href="#contact" class="nav-link"><img src="contact.png" alt="contact" title="contact" style="width:25px; height:25px;"></a>
+        </div>
+    </nav>
+    
+  <!--header with animation-->
+  <header>
+  <header id="small">
+   
+
+    <style>
+        .word {
+            font-size:12px; 
+         
+            font-family:"unbounded", sans-serif;
+        }
+
+        .letter {
+            font-family:"aktiv-grotesk-extended", sans-serif;
+            font-size:22px; 
+            display: inline-block;
+            opacity: 0;
+            color: grey;
+            
+        }
+    </style>
+    
+    <div class="word" id="word"
+        style="padding-left:14px; padding-top:20px;" 
+    >sarthak&nbsp;pokhriyal </div>
+     
+    <script>
+        //for the animation
+           const word = document.getElementById('word');
+        const letters = word.textContent.split('');
+        word.textContent = '';
+
+        letters.forEach(letter => {
+            const span = document.createElement('span');
+            span.textContent = letter;
+            span.className = 'letter';
+            word.appendChild(span);
+        });
+
+        gsap.fromTo(
+            ".letter",
+            { opacity: 0, y:-20 },
+            { opacity: 1, y: 0, duration: 0.7, stagger: 0.1 }
+        );
+    </script>
+</header>
+<!--header underline-->
+<hr style="  margin-left:14px; margin-right:14px"> 
+<!--section home-->
+<section id="home">
+
+    <div class="work" > 
+        <span>
+             <p >interactive<br> designer &<br> developer  </p>
+        </span style="padding-right:100;">
+        
+            <img src="chiku.jpg" style="border-radius: 50%; height:370px; width:400px; 
+               box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); ">
+    </span>
+    <span>
+        <img src=" jj.png" style="width:1px;">
+    </span>
+    </div>
+   <button class="hehe" style="padding:10px; font-size:20px;">join me!</button>
+    <button class="hehe" style="padding:10px; font-size:20px;">wapppp</button>
+  </section>
+
+  <!--projects-->
+  <section id="projects">
+   <header class='pi'> 
+    <h1> projects</h1>
+   </header>
+    <div class="bechme">
+    <div class="jjk"> 
+        <img src="9d7d9d32cf79ae751798113a5f467109.jpg">
+    </div>
+    <div class="jjk">
+        <img src="eab1207da589ec7d1a17696fa5e7ba32.jpg">
+    </div>
+    <div class="jjk">
+        <img src="go.jpg"> 
+    </div>
+    <div class="jjk"> 
+        <img src="jkjk.jpg">
+        </div>
+    </div>
+    
+  </section>
+
+   <!--about me -->
+
+  <section id="about">
+    <header class="pil"> 
+      <h1>about me</h1>
+    </header>
+
+    <div class="para">
+        <div> 
+            I am a visionary creator with a passion for blending imagination and innovation into
+            meaningful experiences.With a knack for turning abstract ideas into tangible results,
+            I thrive in environments where curiosity fuels creativity.<br><br>
+        </div>
+        <div> 
+            My journey has been anything but ordinary, traversing the realms of design, strategy,
+            and storytelling. Whether I’m crafting a compelling narrative, designing immersive visuals,
+            or solving complex challenges, I bring a blend of artistry and analytical thinking to every project I undertake.<br><br>     
+        </div>
+        <div> 
+            Collaboration is at the heart of what I do. I believe that the best ideas are born from diverse perspectives 
+            and open minds. When I’m not working, you’ll often find me exploring new worlds—be it through books, travel,
+             or the occasional deep dive into experimental art forms.<br><br>
+            I’m here to leave a mark—not just on projects, but on people. Let’s build something extraordinary together.
+        </div>
+ 
+   </div>
+   <div>
+    <header class="edu">
+      <h1> Education <br>   
+       & exerience </h1>
+    </header>
+    <div>
+    <h1 style="padding-left:200px;">Singh Industries</h1>
+    <br><br>
+
+     <p class="para"> I monitor business operations with a focus on improving efficiency. I evaluate data to implement improvements 
+    in production. I also implement management controls to minimise production issues.
+    Industrial Engineering Manager</p>
+    
+    <h1 style="padding-left:200px;">Mountainside Industries</h1>
+    <br><br>
+    <p class="para"> I monitor business operations with a focus on improving efficiency. I evaluate data to implement improvements 
+    in production. I also implement management controls to minimise production issues.
+    Senior Industrial Engineer</p>
+
+    </div>
+    </div>
+  </section>
+
+
+
+<!--contacts-->
+  <section id="contact">
+   <header class="pi"> 
+    <h2>contacts</h2>
+   </header>
+   <div class="toty"> 
+    
+    
+    <div style="font-size:20px; 
+     padding-top:50px; padding-left:14px; "> 
+           
+           <div><h2>sarthak pokhriyal</h2></div>
+            
+           
+           
+            <p> 
+            <br><br>
+           mail: waititseasy@gamil.com <br><br>
+           
+            contact no: 99101-68641
+           <br><br><br>
+            <a href="https://www.shutterstock.com/image-photo/attitude-260nw-645335.jpg" download="gogogagachigga.jpg"  >
+            <button class="hehe">find my resume here</button></a>
+            </p>
+       
+            
+    </div>
+    <div>
+        <p style="padding-left:20px;
+         font-family: unbounded, sans-serif;"> connect with me... </p>
+    <div style="display:flex; justify-content: space-between; padding-top:10;">
+        
+        <div class="am" style="padding-top:20px;">
+            <a href="https://brand.linkedin.com/downloads"> <img src="3670129.png " style="height:40px; width:40px;"></a>
+         </div>
+         <div class="am" >
+            <a href="https://www.instagram.com/mxnwhxxre/"> <img src="wawa.webp" style="height:62px; width:62px;"></a>
+         </div>
+         <div class="am"  style="padding-top:20px;"> 
+            <a href="https://x.com/Cristiano?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="1707222563twitter-logo-png.png"
+             style="height:40px; width:40px;"> </a> 
+    </div>
+    <div class="am"> 
+        <a href="https://www.facebook.com/p/Handsome-Black-Men-100066482355346/"> <img src="Facebook-f_Logo-Blue-Logo.wine.svg" style="height:62px; width:62px;"></a>
+     </div>
+    </div>
+    <div>
+        </div>
+    </div>;
+  </section>
+
+<footer style="padding-bottom:20px; margin:14; ">
+    <hr>
+</footer>    
+
+
+<!--javascript-->
+<script>
+  //fr getting tge active session 
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+      let current = "";
+
+      // Determine the current section in view
+      sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+
+          if (window.scrollY >= sectionTop - sectionHeight / 3) {
+              current = section.getAttribute("id");
+          }
+      });
+
+      // Reset styles for all links and apply active styles to the current one
+      navLinks.forEach(link => {
+          link.classList.remove("active"); // Remove active class
+          link.style.transform = "scale(1)"; // Reset to normal size
+          link.style.opacity = "0.7"; // Dim the inactive icons
+          if (link.getAttribute("href").includes(current)) {
+              link.classList.add("active"); // Add active class
+              link.style.transform = "scale(1.5)"; // Zoom the active link
+              link.style.opacity = "1"; // Make the active icon fully visible
+          }
+      });
+  });
+</script>
+</body>
+</html>

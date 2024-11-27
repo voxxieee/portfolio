@@ -1,0 +1,165 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family:"aktiv-grotesk-extended", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+   /* background-image: linear-gradient(to bottom, rgb(2, 98, 139) , rgb(1, 41, 49) );*/
+   background-image: radial-gradient(circle, #ffffff, #ffffff);
+  }
+  
+  nav {
+    top:200px;
+    right: 20px; /* Align the nav to the right */
+    background-color: rgba(255, 255, 255,0.5);
+    padding: 10px;
+    position :fixed;
+    border-radius: 200px;
+    position: fixed;
+ 
+}
+nav a img {
+    padding: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s, opacity 0.3s; /* Smooth zoom effect */
+    transform: scale(1); /* Default size */
+    opacity: 0.7; /* Dim inactive icons */
+}
+
+nav a.active img{
+    transform: scale(1.5); /* Zoom effect for the active icon */
+    opacity: 1; /* Full opacity for the active icon */
+}
+
+nav a:hover img{
+    transform: scale(1.5); /* Zoom effect for the active icon */
+    opacity: 1; /* Full opacity for the active icon */
+}
+
+
+  
+  /* Section Styles */
+  section {
+    height: auto; /* Full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+.work{
+    font-family: "unbounded", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size:82px;
+    margin-top:0;
+    display:flex;
+    justify-content:space-between;
+
+}
+#home{
+    height: 100vh;
+}
+
+@keyframes appear{
+    from{
+        opacity:0;
+        scale:0;
+    }
+    to{
+        opacity:1;
+        scale:1;
+    }
+}
+.jjk{
+    
+    display:block;
+    animation:appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); 
+    margin:20px;
+   
+}  
+.bechme{
+    margin :18%;
+    padding:50px;
+}
+
+#projects{
+    height:100vh;
+    overflow:auto;
+    html {
+        scroll-behavior: smooth;
+      }
+ 
+}
+.pi{
+    font-family:"unbounded", sans-serif;
+    font-size: 25px;
+    
+    margin:14px;
+    position: sticky;
+    top: 0; /* Sticks the header to the top when scrolling */
+   
+    z-index: 1000; /* Optional: Ensures it stays above other elements */
+
+  
+}
+.toty{
+    display:flex;
+    justify-content: space-between;
+    font-family: "unbounded", sans-serif;
+}
+#contact{
+    height:100vh;
+}
+ .hehe{
+
+         font-size: 16px;  
+        background: linear-gradient(to right, #007BFF, #0056b3);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+      
+ }
+ .hehe:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  
+.am{
+    padding:12px;
+}
+.para{
+    margin-left:250px;
+    font-family: "unbounded", sans-serif;
+    font-size:25px;
+    padding-right:100px;
+}
+.pil{
+    font-family:"unbounded", sans-serif;
+    font-size: 25px;
+    
+    margin:14px;
+    position: sticky;
+    top: 0; /* Sticks the header to the top when scrolling */
+    background: white;
+    z-index: 1000; /* Optional: Ensures it stays above other elements */
+
+  
+}
+.edu{
+    font-family:"unbounded", sans-serif;
+    padding-left:14px;
+    position:sticky;
+    top:0; 
+    background:white;
+    z-index:1000;
+}
